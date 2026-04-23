@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Omkar Magar | Cybersecurity Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Matrix Canvas Background -->
+  <canvas id="matrix-canvas"></canvas>
+
+  <!-- Scanline overlay -->
+  <div class="scanlines"></div>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursor-trail"></div>
+
+  <!-- ─── NAV ─── -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <span class="bracket">[</span>OM<span class="accent">_</span>MAGAR<span class="bracket">]</span>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#hero"       class="nav-link" data-label="00">HOME</a></li>
+      <li><a href="#about"      class="nav-link" data-label="01">ABOUT</a></li>
+      <li><a href="#skills"     class="nav-link" data-label="02">SKILLS</a></li>
+      <li><a href="#projects"   class="nav-link" data-label="03">PROJECTS</a></li>
+      <li><a href="#positions"  class="nav-link" data-label="04">ROLES</a></li>
+      <li><a href="#contact"    class="nav-link" data-label="05">CONTACT</a></li>
+    </ul>
+  </nav>
+
+  <!-- ─── HERO ─── -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-tag">// INITIALIZING SYSTEM...</div>
+      <h1 class="glitch-name" data-text="OMKAR MAGAR">OMKAR MAGAR</h1>
+      <div class="hero-typing-wrapper">
+        <span class="prompt">root@system:~$&nbsp;</span>
+        <span id="typed-text" class="typed-text"></span>
+        <span class="cursor-blink">▋</span>
+      </div>
+      <p class="hero-sub">B.Tech CSE · Rajarambapu Institute of Technology · 2nd Year</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">
+          <span class="btn-glitch">VIEW PROJECTS</span>
+        </a>
+        <a href="#contact" class="btn btn-outline">CONTACT ME</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">4</span><span class="stat-label">PROJECTS</span></div>
+        <div class="stat-divider">//</div>
+        <div class="stat"><span class="stat-num">1</span><span class="stat-label">WORKSHOP</span></div>
+        <div class="stat-divider">//</div>
+        <div class="stat"><span class="stat-num">2+</span><span class="stat-label">YEARS CODING</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hex-ring">
+        <div class="hex-inner">
+          <div class="avatar-placeholder">
+            <div class="av-icon">⬡</div>
+            <div class="av-text">OM</div>
+          </div>
+        </div>
+        <svg class="orbit-ring" viewBox="0 0 300 300">
+          <circle cx="150" cy="150" r="140" stroke="#00ff88" stroke-width="1" fill="none" stroke-dasharray="4 8" opacity="0.4"/>
+          <circle cx="150" cy="150" r="120" stroke="#00cfff" stroke-width="1" fill="none" stroke-dasharray="2 12" opacity="0.3"/>
+        </svg>
+        <div class="orbit-dot dot1"></div>
+        <div class="orbit-dot dot2"></div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>SCROLL</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ─── -->
+  <section id="about" class="section">
+    <div class="section-header reveal">
+      <span class="section-num">01</span>
+      <h2>ABOUT<span class="accent">_</span>ME</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-card reveal">
+        <div class="card-corner tl"></div>
+        <div class="card-corner tr"></div>
+        <div class="card-corner bl"></div>
+        <div class="card-corner br"></div>
+        <div class="card-label">// WHO AM I</div>
+        <p>Aspiring <span class="accent-text">Cyber Security</span> enthusiast with a strong interest in ethical hacking, networking, and web technologies.</p>
+        <p>Passionate about building <span class="accent-text">real-world projects</span> and learning practical security concepts. Actively improving skills in the cybersecurity field.</p>
+        <div class="about-badges">
+          <span class="badge">ETHICAL HACKING</span>
+          <span class="badge">NETWORKING</span>
+          <span class="badge">WEB TECH</span>
+        </div>
+      </div>
+      <div class="about-info-grid reveal">
+        <div class="info-item">
+          <div class="info-icon">🎓</div>
+          <div>
+            <div class="info-label">COLLEGE</div>
+            <div class="info-value">Rajarambapu Institute of Technology, Islampur</div>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">📡</div>
+          <div>
+            <div class="info-label">YEAR</div>
+            <div class="info-value">2nd Year — B.Tech CSE</div>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">🔐</div>
+          <div>
+            <div class="info-label">FOCUS</div>
+            <div class="info-value">Cybersecurity & Ethical Hacking</div>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">📍</div>
+          <div>
+            <div class="info-label">LOCATION</div>
+            <div class="info-value">Maharashtra, India</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ─── -->
+  <section id="skills" class="section">
+    <div class="section-header reveal">
+      <span class="section-num">02</span>
+      <h2>SKILL<span class="accent">_</span>SET</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="skills-grid">
+
+      <div class="skill-card reveal" data-delay="0">
+        <div class="skill-icon">🌐</div>
+        <div class="skill-name">Web Development</div>
+        <div class="skill-level">HTML · CSS · JS</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" data-width="65"></div></div>
+        <div class="skill-badge">BASIC</div>
+      </div>
+
+      <div class="skill-card reveal" data-delay="100">
+        <div class="skill-icon">🔌</div>
+        <div class="skill-name">Networking</div>
+        <div class="skill-level">Protocols · Topology</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" data-width="50"></div></div>
+        <div class="skill-badge">BASIC</div>
+      </div>
+
+      <div class="skill-card reveal" data-delay="200">
+        <div class="skill-icon">🛡️</div>
+        <div class="skill-name">Cybersecurity Tools</div>
+        <div class="skill-level">Recon · Analysis</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" data-width="45"></div></div>
+        <div class="skill-badge">BASIC</div>
+      </div>
+
+      <div class="skill-card reveal" data-delay="300">
+        <div class="skill-icon">💻</div>
+        <div class="skill-name">C Programming</div>
+        <div class="skill-level">Logic · Data Structures</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" data-width="55"></div></div>
+        <div class="skill-badge">BASIC</div>
+      </div>
+
+      <div class="skill-card reveal" data-delay="400">
+        <div class="skill-icon">🎬</div>
+        <div class="skill-name">Video Editing</div>
+        <div class="skill-level">Post-Production</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" data-width="70"></div></div>
+        <div class="skill-badge">INTERMEDIATE</div>
+      </div>
+
+      <div class="skill-card reveal" data-delay="500">
+        <div class="skill-icon">⚙️</div>
+        <div class="skill-name">VS Code</div>
+        <div class="skill-level">IDE · Extensions</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" data-width="80"></div></div>
+        <div class="skill-badge">PROFICIENT</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ─── -->
+  <section id="projects" class="section">
+    <div class="section-header reveal">
+      <span class="section-num">03</span>
+      <h2>PROJECT<span class="accent">_</span>LOG</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="projects-grid">
+
+      <div class="project-card reveal" data-delay="0">
+        <div class="project-num">P-001</div>
+        <div class="project-tag">PYTHON · ML · MEDIAPIPE</div>
+        <h3>Sign Language Translation System</h3>
+        <p>Converts hand gestures into text in real-time using computer vision and machine learning. Built as a first-year EEDP project.</p>
+        <div class="project-tech">
+          <span>Python</span><span>MediaPipe</span><span>ML</span>
+        </div>
+        <div class="project-footer">
+          <span class="project-status">● COMPLETED</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-delay="150">
+        <div class="project-num">P-002</div>
+        <div class="project-tag">WEB · DATA SCIENCE</div>
+        <h3>Fertilizer Recommendation System</h3>
+        <p>Web-based system that suggests the best fertilizer based on temperature, humidity, pH, and crop type inputs. Built for EVS project.</p>
+        <div class="project-tech">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+        <div class="project-footer">
+          <span class="project-status">● COMPLETED</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-delay="300">
+        <div class="project-num">P-003</div>
+        <div class="project-tag">UTILITY · IOT CONCEPT</div>
+        <h3>Smart Food Tracker</h3>
+        <p>Tracks product expiry dates, designed for hotels and stores to minimize waste and automate inventory management alerts.</p>
+        <div class="project-tech">
+          <span>Tracking</span><span>Alerts</span><span>UI</span>
+        </div>
+        <div class="project-footer">
+          <span class="project-status">● COMPLETED</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal featured" data-delay="450">
+        <div class="project-num">P-004</div>
+        <div class="project-tag featured-tag">⭐ REAL CLIENT · LIVE</div>
+        <h3>OM Furniture Website</h3>
+        <p>Production website for a real furniture client. Features product showcase, WhatsApp integration for direct customer contact, and responsive design.</p>
+        <div class="project-tech">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>WhatsApp API</span>
+        </div>
+        <div class="project-footer">
+          <a href="https://github.com/omkarmagar1132-creator/Om-furniture" target="_blank" class="github-btn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            VIEW ON GITHUB
+          </a>
+          <span class="project-status live">● LIVE</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── POSITIONS & CERTIFICATIONS ─── -->
+  <section id="positions" class="section">
+    <div class="section-header reveal">
+      <span class="section-num">04</span>
+      <h2>ROLES<span class="accent">&</span>CERTS</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="timeline">
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="tl-tag">POSITION</div>
+          <h3>Social Media & Marketing Head</h3>
+          <div class="tl-org">CryptX Security Club — RIT</div>
+          <p>Leading digital presence and marketing strategy for the institute's cybersecurity club. Managing campaigns, content creation, and community outreach for security awareness.</p>
+          <div class="tl-skills">
+            <span>Social Media</span>
+            <span>Marketing</span>
+            <span>Content Creation</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="tl-tag">CERTIFICATION</div>
+          <h3>Behind The Hack — Workshop</h3>
+          <div class="tl-org">Cybersecurity Workshop · RIT</div>
+          <p>Participated in an intensive cybersecurity workshop covering hacking methodologies, tools, and ethical practices. Contributed in a social media management capacity.</p>
+          <div class="tl-skills">
+            <span>Ethical Hacking</span>
+            <span>Security Tools</span>
+            <span>Workshop</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section id="contact" class="section">
+    <div class="section-header reveal">
+      <span class="section-num">05</span>
+      <h2>ESTABLISH<span class="accent">_</span>CONNECTION</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-left reveal">
+        <div class="contact-card-label">// OPEN TO OPPORTUNITIES</div>
+        <h3>Let's Build Something<br/><span class="accent-text">Secure Together</span></h3>
+        <p>Whether it's a cybersecurity project, web development gig, or just a tech talk — feel free to reach out. Always open to learning and collaborating.</p>
+        <div class="contact-status">
+          <div class="status-dot"></div>
+          <span>AVAILABLE FOR INTERNSHIPS & PROJECTS</span>
+        </div>
+      </div>
+      <div class="contact-links reveal">
+        <a href="mailto:omkarmagar1132@gmail.com" class="contact-link">
+          <div class="cl-icon">✉</div>
+          <div class="cl-info">
+            <span class="cl-label">EMAIL</span>
+            <span class="cl-value">omkarmagar1132@gmail.com</span>
+          </div>
+          <div class="cl-arrow">→</div>
+        </a>
+        <a href="tel:9075659477" class="contact-link">
+          <div class="cl-icon">📞</div>
+          <div class="cl-info">
+            <span class="cl-label">PHONE</span>
+            <span class="cl-value">+91 9075659477</span>
+          </div>
+          <div class="cl-arrow">→</div>
+        </a>
+        <a href="https://www.linkedin.com/in/omkar-magar-9a4aa338a" target="_blank" class="contact-link">
+          <div class="cl-icon">in</div>
+          <div class="cl-info">
+            <span class="cl-label">LINKEDIN</span>
+            <span class="cl-value">omkar-magar-9a4aa338a</span>
+          </div>
+          <div class="cl-arrow">→</div>
+        </a>
+        <a href="https://github.com/omkarmagar1132-creator" target="_blank" class="contact-link">
+          <div class="cl-icon">⌥</div>
+          <div class="cl-info">
+            <span class="cl-label">GITHUB</span>
+            <span class="cl-value">omkarmagar1132-creator</span>
+          </div>
+          <div class="cl-arrow">→</div>
+        </a>
+        <a href="https://wa.me/919075659477" target="_blank" class="contact-link">
+          <div class="cl-icon">💬</div>
+          <div class="cl-info">
+            <span class="cl-label">WHATSAPP</span>
+            <span class="cl-value">+91 9075659477</span>
+          </div>
+          <div class="cl-arrow">→</div>
+        </a>
+        <a href="https://instagram.com/omkyaa1132" target="_blank" class="contact-link">
+          <div class="cl-icon">◈</div>
+          <div class="cl-info">
+            <span class="cl-label">INSTAGRAM</span>
+            <span class="cl-value">@omkyaa1132</span>
+          </div>
+          <div class="cl-arrow">→</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-logo">[OM_MAGAR]</span>
+      <span class="footer-copy">© 2025 · Omkar Vithal Magar · All Rights Reserved</span>
+      <span class="footer-tag">// BUILT WITH ❤️ & CODE</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
